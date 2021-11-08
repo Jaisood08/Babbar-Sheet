@@ -15,7 +15,7 @@ class heap
  {
    V.push_back(val);
    int i = V.size()-1;
-   while(i>1 && V[i]<=V[i/2])
+   while(i>1 && V[i]<V[i/2])
    {
      swap(V[i],V[i/2]);
      i = i/2;
